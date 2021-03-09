@@ -7,20 +7,17 @@ public class UIManager : MonoBehaviour
 {
     public Text ammoText;
 
+    public GameObject coin;
+
+
     public void UpdateAmmo(int count)
     {
         ammoText.text = "Ammo: " + count;
     }
 
 
-    // Start is called before the first frame update
-    void Start()
+    public void CollectedCoin()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        coin.SetActive(true);
     }
 }
