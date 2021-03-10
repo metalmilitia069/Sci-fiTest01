@@ -15,9 +15,13 @@ public class UIManager : MonoBehaviour
         ammoText.text = "Ammo: " + count;
     }
 
-
     public void CollectedCoin()
     {
         coin.SetActive(true);
+    }
+
+    public void RemoveCoin()
+    {
+        coin.SetActive(false);
     }
 }
